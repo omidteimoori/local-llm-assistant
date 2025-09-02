@@ -69,7 +69,15 @@ local-llm-assistant/
 
 ---
 
-## License & Credits
+## License 
 MIT License  
 
+---
+
+## Author 
+
 Developed by **Omid Teimoori**
+ 
+[GitHub](https://github.com/OmidTeimoori) | [LinkedIn](https://linkedin.com/in/omidteimoori)
+
+- [Other Projects](https://omidteimoori.com/projects.html)
