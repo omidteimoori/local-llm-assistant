@@ -49,24 +49,6 @@ What it does:
 
 ---
 
-## Development (Manual Mode)
-
-If you prefer to manage Ollama yourself:
-
-1. Install [Ollama](https://ollama.ai/download).  
-2. Start the server and pull the model:
-   ```sh
-   ollama serve
-   ollama pull qwen2.5-coder:7b-instruct
-   ```
-3. Serve the frontend locally:
-   ```sh
-   python3 -m http.server 5173
-   ```
-4. Open [http://localhost:5173](http://localhost:5173).
-
----
-
 ## Project Structure
 ```
 local-llm-assistant/
