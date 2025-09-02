@@ -1,0 +1,214 @@
+/* Variables */
+:root {
+  --bg:#0f1115;
+  --panel:#151821;
+  --text:#e8e8ea;
+  --muted:#9aa0a6;
+  --accent:#6ea8fe;
+  --border:#262b36;
+  --ink:#0e1220;
+}
+
+/* Reset */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: ui-sans-serif, -apple-system, Segoe UI, Roboto, Helvetica, Arial;
+}
+
+/* Header */
+header {
+  background: var(--panel);
+  border-bottom: 1px solid var(--border);
+  padding: 16px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+header h1 {
+  margin: 0;
+  font-size: 16px;
+  letter-spacing: .2px;
+  color: #fff;
+}
+
+.header-center {
+  text-align: center;
+  font-size: 12px;
+  color: var(--muted);
+}
+
+.header-right {
+  text-align: right;
+  font-size: 12px;
+  color: var(--muted);
+}
+
+.meta {
+  font-size: 12px;
+  color: var(--muted);
+}
+
+/* Main layout */
+main {
+  max-width: 980px;
+  margin: 20px auto 100px;
+  padding: 0 16px;
+  display: grid;
+  gap: 16px;
+}
+.card {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 16px;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Form controls */
+label {
+  font-size: 12px;
+  color: var(--muted);
+  display: block;
+  margin-bottom: 8px;
+}
+textarea {
+  width: 100%;
+  min-height: 160px;
+  resize: vertical;
+  background: var(--ink);
+  color: var(--text);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 12px;
+  line-height: 1.45;
+}
+
+/* Actions */
+.actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 12px;
+}
+button {
+  height: 40px;
+  padding: 0 14px;
+  border-radius: 10px;
+  cursor: pointer;
+  border: 1px solid var(--border);
+  background: var(--ink);
+  color: var(--text);
+}
+.primary {
+  background: var(--accent);
+  color: #081120;
+  border-color: transparent;
+  font-weight: 600;
+}
+
+/* Answer section */
+.answer {
+  line-height: 1.6;
+}
+pre,
+code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+pre {
+  background: #0b0f1a;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 12px;
+  overflow: auto;
+  position: relative;
+}
+code {
+  background: #0b0f1a;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 2px 6px;
+  color: #e8e8ea;
+}
+pre > code {
+  border: none;
+  padding: 0;
+  background: transparent;
+}
+
+/* Copy button */
+.copy-btn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  font-size: 12px;
+  padding: 4px 8px;
+  border-radius: 8px;
+  background: #182030;
+  color: #cfd3da;
+  border: 1px solid var(--border);
+  cursor: pointer;
+}
+.copy-btn.copied {
+  background: #1f3d27;
+  color: #b8f7c1;
+  border-color: #295b36;
+}
+
+/* Footer */
+footer {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: var(--panel);
+  border-top: 1px solid var(--border);
+  color: var(--muted);
+  font-size: 12px;
+  padding: 10px 16px;
+  text-align: center;
+}
+
+/* Intro box */
+.intro-box {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #c8cbd3;
+  margin-bottom: 12px;
+  background: #0e1220;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 16px;
+}
+.intro-box h2 {
+  margin: 0 0 6px;
+  font-size: 16px;
+  color: #fff;
+}
+
+/* Utilities */
+.hidden {
+  display: none;
+}
+
+/* Temperature control */
+.temp-control {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  font-size: 12px;
+  color: var(--muted);
+  margin-top: 8px;
+}
+.temp-control input {
+  width: 160px;
+}
+.temp-control span {
+  margin-left: 6px;
+}
