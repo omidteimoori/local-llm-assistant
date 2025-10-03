@@ -37,8 +37,7 @@ What it does:
 ### 3. Run on Windows
 Open **PowerShell** and run:
 ```powershell
-.\scripts
-un-windows.ps1
+.\scripts\run-windows.ps1
 ```
 
 What it does:
