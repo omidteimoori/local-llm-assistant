@@ -17,7 +17,7 @@ Designed to answer **JavaScript, SQL, and HTML** questions with precise explanat
 
 ### 1. Clone this repo
 ```sh
-git clone <YOUR_REPO_URL>
+git clone <REPO_URL>
 cd local-llm-assistant
 ```
 
